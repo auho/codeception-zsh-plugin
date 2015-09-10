@@ -29,15 +29,15 @@ _codeception () {
       esac
       ;;
         *)
-      compadd `/usr/local/bin/codecept $words[2] -h --no-ansi | sed "1,/Options:/d" | sed '/^$/d' | awk '{ print $1 }'`
+      #compadd `/usr/local/bin/codecept $words[2] -h --no-ansi | sed "1,/Options:/d" | sed '/^$/d' | awk '{ print $1 }'`
       ;;
     esac
   fi
 }
 
 # Completion setup
-compdef _codeception /usr/local/bin/codecept
+#compdef _codeception /usr/local/bin/codecept
 compdef _codeception codecept
 
 # Alias
-alias codecept='/usr/local/bin/codecept'
+#alias codecept='/usr/local/bin/codecept'
